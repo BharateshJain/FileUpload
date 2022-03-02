@@ -4,10 +4,7 @@ import boto3
 app = Flask(__name__)
 from werkzeug.utils import secure_filename
 
-s3 = boto3.resource('s3',
-        aws_access_key_id = "",
-        aws_secret_access_key = ""
-        )
+s3 = boto3.resource('s3')
 
 @app.route('/')
 def home():
