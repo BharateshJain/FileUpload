@@ -5,8 +5,8 @@ app = Flask(__name__)
 from werkzeug.utils import secure_filename
 
 s3 = boto3.resource('s3',
-        aws_access_key_id = "AKIA2MPRBQ56SDX44U5C",
-        aws_secret_access_key = "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"
+        aws_access_key_id = "",
+        aws_secret_access_key = ""
         )
 
 @app.route('/')
